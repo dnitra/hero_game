@@ -108,7 +108,7 @@ class character {
 
           clearInterval(movement);
         }
-      }, 10/this.speed);
+      }, 10 / this.speed);
     }
 
     return this.coordinates;
@@ -140,7 +140,7 @@ function ghostMovement() {
 
   if (ghostDiv.style.top !== heroDiv.style.top) {
     moveY();
-    
+    return;
   }
   if (ghostDiv.style.left !== heroDiv.style.left) {
     moveX();
